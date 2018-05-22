@@ -1,6 +1,4 @@
-pc-installer
-===============
-
+# Planck's Cloud Installer #
 
 ## System requirements ##
 - 64mb Ram Requirements
