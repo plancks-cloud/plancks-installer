@@ -1,0 +1,26 @@
+version: "3.3"
+services:
+    daemon:
+        ports:
+            - 6109:8080
+        image: planckscloud/daemony:latest
+        networks:
+            - plancknet
+        environment:
+            context: "alpha"
+            DOCKER_HOST: "unix:///var/run/docker.sock"
+            WALLET: "DEFAULT_WALLET"
+        volumes:
+            - /var/run/docker.sock:/var/run/docker.sock
+        deploy:
+            resources:
+                limits:
+                    memory: 32M
+            restart_policy:
+                condition: on-failure
+                delay: 5s
+                max_attempts: 20
+                window: 380s
+networks:
+    plancknet:
+        driver: overlay
