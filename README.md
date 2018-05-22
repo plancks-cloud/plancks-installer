@@ -1,5 +1,7 @@
 # Planck's Cloud Installer #
 
+<a href="https://plancks.cloud/"><img src="https://plancks.cloud/img/icon.svg" width="150"></a>
+
 ## System requirements ##
 - 64mb Ram Requirements
 - 10mb HDD Requirements
@@ -15,3 +17,5 @@
 Run `docker swarm init`
 - In Linux, run
 Run `docker swarm init`
+
+
