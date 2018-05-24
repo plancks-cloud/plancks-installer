@@ -13,9 +13,7 @@
 
 ## Setup ##
 
-- In Windows, open Command Prompt and run
-Run `docker swarm init`
-- In Linux, run
+- Open command prompt (Windows) or terminal (Unix / Linux)
 Run `docker swarm init`
 
 
