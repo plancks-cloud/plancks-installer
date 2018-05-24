@@ -14,6 +14,7 @@
 ## Setup ##
 
 - Open command prompt (Windows) or terminal (Unix / Linux)
-Run `docker swarm init`
-
-
+- Run `docker swarm init`
+- Run `docker service create -d --name brutus planckscloud/brutus:latest`
+- Wait a few minutes (depending on your Internet connection.
+- Open your browser to http://localhost:6108. 
