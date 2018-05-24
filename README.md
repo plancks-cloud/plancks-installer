@@ -15,7 +15,7 @@
 
 - Open command prompt (Windows) or terminal (Unix / Linux)
 - Run `docker swarm init`
-- Run `docker service create -d --name brutus planckscloud/brutus:latest`
+- Run `docker service create -d --name brutus --constraint 'node.role == manager' --mount type=bind,source=/var/run/docker.sock,target=/var/run/docker.sock planckscloud/brutus:latest`
 - Wait a few minutes (depending on your Internet connection).
 - Open your browser to http://localhost:6108. 
 
